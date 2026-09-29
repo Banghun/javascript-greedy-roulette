@@ -14,7 +14,7 @@ export function validateAmount(input, money) {
   if (input === '') {
     throw new Error(ERROR_MESSAGE.EMPTY_AMOUNT);
   }
-  if (!/^[0-9]+$/.test(input) || Number(input) < 1) {
+  if (!/^[1-9][0-9]*$/.test(input)) {
     throw new Error(ERROR_MESSAGE.WRONG_AMOUNT);
   }
   if (Number(input) > money) {
