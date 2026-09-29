@@ -78,7 +78,7 @@ export default class GameView {
     this.addLine(`베팅 실패! -${formatMoney(amount)}원`, 'lose');
   }
 
-  showGameOverSoon() {
+  appendGameOverNotice() {
     this.addLine('게임이 곧 종료됩니다.');
   }
 

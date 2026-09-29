@@ -42,13 +42,16 @@ export default class GameController {
   finishSpin(color, amount) {
     const resultColor = this.roulette.spin();
     const prize = this.game.checkResult(color, amount, resultColor);
+
     this.view.showStatus(this.game.money, this.game.round);
     this.view.showResult(resultColor, prize, amount);
+
     if (this.game.isBankrupt()) {
-      this.view.showGameOverSoon();
+      this.view.appendGameOverNotice();
       setTimeout(() => this.endGame(), GAME_OVER_TIME);
       return;
     }
+
     this.view.disableButtons(false);
   }
 
