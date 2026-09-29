@@ -72,10 +72,10 @@ export default class GameView {
     colorText.className = `result-color ${resultColor.toLowerCase()}`;
     colorLine.appendChild(colorText);
     if (prize > 0) {
-      this.addLine(`베팅 성공! +${formatMoney(prize)}원`, 'win');
+      this.addLine(`베팅 성공! +${formatMoney(prize)}원`, 'result-win');
       return;
     }
-    this.addLine(`베팅 실패! -${formatMoney(amount)}원`, 'lose');
+    this.addLine(`베팅 실패! -${formatMoney(amount)}원`, 'result-lose');
   }
 
   appendGameOverNotice() {
