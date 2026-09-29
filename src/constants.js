@@ -2,7 +2,7 @@ export const INITIAL_MONEY = 10000;
 export const SPIN_TIME = 2000;
 export const GAME_OVER_TIME = 2000;
 
-export const COLORS = [
+export const ROULETTE_COLORS = [
   { name: 'YELLOW', count: 21, multiplier: 1 },
   { name: 'GREEN', count: 10, multiplier: 3 },
   { name: 'BLUE', count: 6, multiplier: 5 },

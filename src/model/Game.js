@@ -1,7 +1,7 @@
-import { COLORS, INITIAL_MONEY } from '../constants.js';
+import { ROULETTE_COLORS, INITIAL_MONEY } from '../constants.js';
 
 function getMultiplier(colorName) {
-  const color = COLORS.find((item) => item.name === colorName);
+  const color = ROULETTE_COLORS.find((item) => item.name === colorName);
   return color.multiplier;
 }
 

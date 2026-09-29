@@ -1,10 +1,10 @@
-import { COLORS, ERROR_MESSAGE } from '../constants.js';
+import { ROULETTE_COLORS, ERROR_MESSAGE } from '../constants.js';
 
 export function validateColor(color) {
   if (color === '') {
     throw new Error(ERROR_MESSAGE.EMPTY_COLOR);
   }
-  const colorNames = COLORS.map((item) => item.name);
+  const colorNames = ROULETTE_COLORS.map((item) => item.name);
   if (!colorNames.includes(color)) {
     throw new Error(ERROR_MESSAGE.WRONG_COLOR);
   }

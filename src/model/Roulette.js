@@ -1,9 +1,9 @@
-import { COLORS } from '../constants.js';
+import { ROULETTE_COLORS } from '../constants.js';
 
 export default class Roulette {
   constructor() {
     this.slots = [];
-    COLORS.forEach((color) => {
+    ROULETTE_COLORS.forEach((color) => {
       for (let i = 0; i < color.count; i += 1) {
         this.slots.push(color.name);
       }
